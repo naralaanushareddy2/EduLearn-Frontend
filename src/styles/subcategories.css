@@ -1,0 +1,307 @@
+/* ================================
+   SUBCATEGORIES PAGE
+   Modern, formal styling using design tokens
+================================ */
+
+.subcategories-page {
+  min-height: 100vh;
+  padding: 40px 6% 120px;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  box-sizing: border-box;
+  transition: var(--theme-transition);
+}
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-category-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--theme-transition);
+}
+
+.back-category-btn svg {
+  font-size: 18px;
+  color: var(--accent-primary);
+}
+
+.back-category-btn:hover {
+  background: var(--accent-subtle);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateX(-3px);
+}
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.subcategory-page-header {
+  max-width: 800px;
+  margin: 50px auto 60px;
+  text-align: center;
+}
+
+.subcategory-page-header p {
+  margin-bottom: 12px;
+  color: var(--accent-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.subcategory-page-header h1 {
+  margin: 0 0 18px;
+  color: var(--text-primary);
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.subcategory-page-header span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ================================
+   SUBCATEGORY SECTION
+================================ */
+
+.subcategory-page-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subcategory-page-section > h2 {
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subcategory-page-section > p {
+  margin-bottom: 30px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* ================================
+   SUBCATEGORY GRID
+================================ */
+
+.subcategory-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ================================
+   SUBCATEGORY CARD
+================================ */
+
+.subcategory-page-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 150px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  text-decoration: none !important;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+  transition: var(--theme-transition);
+  box-sizing: border-box;
+}
+
+.subcategory-page-card,
+.subcategory-page-card:hover,
+.subcategory-page-card:focus,
+.subcategory-page-card:active,
+.subcategory-page-card:visited {
+  text-decoration: none !important;
+}
+
+.subcategory-page-card * {
+  text-decoration: none !important;
+}
+
+.subcategory-page-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-card-hover);
+  text-decoration: none !important;
+}
+
+/* ================================
+   ICON
+================================ */
+
+.subcategory-page-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-subtle);
+  color: var(--accent-primary);
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+/* ================================
+   CONTENT
+================================ */
+
+.subcategory-page-content {
+  flex: 1;
+}
+
+.subcategory-page-content h3 {
+  margin: 0 0 8px;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.subcategory-page-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none !important;
+}
+
+.subcategory-page-content span {
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 12px;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+.subcategory-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--accent-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.subcategory-explore svg {
+  transition: transform 0.2s ease;
+}
+
+.subcategory-page-card:hover .subcategory-explore svg {
+  transform: translateX(4px);
+}
+
+/* ================================
+   ARROW
+================================ */
+
+.subcategory-page-card > svg {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 20px;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.subcategory-page-card:hover > svg {
+  color: var(--accent-primary);
+  transform: translateX(5px);
+}
+
+/* ================================
+   NOT FOUND
+================================ */
+
+.subcategory-not-found {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.subcategory-not-found h2 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  font-size: 28px;
+}
+
+.subcategory-not-found a {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--theme-transition);
+}
+
+.subcategory-not-found a:hover {
+  background: var(--accent-hover);
+}
+
+@media (max-width: 992px) {
+  .subcategory-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subcategory-page-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 650px) {
+  .subcategories-page {
+    padding: 30px 20px 110px;
+  }
+
+  .subcategory-page-header {
+    margin: 40px auto;
+  }
+
+  .subcategory-page-header h1 {
+    font-size: 30px;
+  }
+
+  .subcategory-page-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .subcategory-page-card {
+    padding: 20px;
+  }
+
+  .subcategory-page-section > h2 {
+    font-size: 24px;
+  }
+}
